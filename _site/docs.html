@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <meta name="keywords" content="benchmarks, JVM, benchmarking suite, concurrency, parallelism, modern" />
+  <meta name="description" content="The next-generation benchmarking suite for the JVM." />
+  <link rel="icon" type="image/png" href="/favicon.ico?v=4"/>
+  <link rel="stylesheet" href="/resources/styles/proj.css"/>
+  <link rel="stylesheet" href="/resources/styles/960.css" />
+  <link rel="stylesheet" href="/resources/styles/font-awesome.min.css"/>
+  <link rel="stylesheet" href="/resources/styles/hint.min.css"/>
+  <link rel="stylesheet" href="/resources/js/prettify/prettify3.css"/>
+  <link rel="stylesheet" href="/resources/js/slick-1.6.0/slick/slick.css"/>
+  <link rel="stylesheet" href="/resources/js/slick-1.6.0/slick/slick-theme.css"/>
+  <script type='text/javascript' src="/resources/js/easeljs-0.7.1.min.js"></script>
+  <script type='text/javascript' src="/resources/js/tweenjs-0.5.1.min.js"></script>
+  <script type='text/javascript' src="/resources/js/marked.min.js"></script>
+  <script type='text/javascript' src="/resources/js/CSSPlugin.js"></script>
+  <script type='text/javascript' src="/resources/js/jquery-1.11.0.min.js"></script>
+  <script type='text/javascript'>
+  $(function() {
+    $("pre").addClass("prettyprint linenums");
+  });
+  $(function() {
+    $(".language-scala > pre").addClass("lang-scala");
+    $(".language-java > pre").addClass("lang-java");
+  });
+  </script>
+  <script src="/resources/js/prettify/prettify.js"></script>
+  <script src="/resources/js/prettify/lang-scala.js"></script>
+  <script type='text/javascript' src="/resources/js/slick-1.6.0/slick/slick.js"></script>
+  <script src="/resources/js/devquotes.js"></script>
+  <script src="/resources/js/utils.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+<body onload="prettyPrint()">
+
+  <div id="wrap">
+
+    <div id="top">
+      <div class="container_12">
+        <div class="grid_12">
+          <ul class="horizmenu topmenu">
+            <li class="topelement logo">
+              <!-- <img height="38" src="/resources/images/mona-lisa-round.png"/> -->
+              <span class="logotext" style="">Renaissance Suite</span>
+            </li>
+          </ul>
+          <ul class="horizmenu topmenuright">
+            <li class="topdivider topelement"></li>
+            <li class="topelement topbutton">
+              <a href="/"><i class="fa fa-home icon"></i>Home</a>
+            </li>
+            <li class="topdivider topelement"></li>
+            <li class="topelement topbutton">
+              <a href="/docs#contributing"><i class="fa fa-keyboard-o icon"></i>Contribute</a>
+            </li>
+            <li class="topdivider topelement"></li>
+            <li class="topelement topbutton">
+              <a href="https://github.com/renaissance-benchmarks/renaissance/issues"><i class="fa fa-comment icon"></i>Discuss</a>
+            </li>
+            <li class="topdivider topelement"></li>
+            <!-- <li class="topelement topzero"><a></a></li> -->
+          </ul>
+
+          <!--
+          <form class="horizsearch" action="https://www.google.com/search" method="GET">
+            <input name="as_q" class="search-query" placeholder="Search" type="text">
+            <input name="as_sitesearch" value="storm-enroute.com" type="hidden">
+          </form>
+          -->
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="darkdivider"></div> -->
+    <!-- <div class="greydivider"></div> -->
+    <!-- <div class="topshadow"></div> -->
+
+    <br/>
+
+<div id="content">
+  <div id="main" class="container_16">
+
+    <div class="grid_16">
+
+      <div class="grid_2 alpha">
+        <br/>
+      </div>
+      <div class="grid_12 title">
+      </div>
+      <div class="grid_2 omega"></div>
+
+      <h1 id="documentation-overview">Documentation Overview</h1>
+
+<p>Thank you for your interest in using the Renaissance Benchmark Suite!
+<br />
+On this page, we provide basic usage instructions, and other useful information.</p>
+
+<ul>
+  <li><a href="#getting-started">Getting Started with Renaissance</a></li>
+  <li><a href="#contributing">Contributing to Renaissance</a></li>
+  <li><a href="#licensing">Licensing Information</a></li>
+</ul>
+
+<h1 id="-getting-started-with-renaissance"><a name="getting-started"></a> Getting Started with Renaissance</h1>
+
+<p>The Renaissance Benchmark Suite comes with an informative guide
+on how to run Renaissance benchmarks, how to add new benchmarks, run policies and plugins,
+and a technical overview of the internal design of the suite.</p>
+
+<div id="contribution-holder">
+</div>
+<script>
+loadRemoteContent(
+  "contribution-holder",
+  "https://api.github.com/repos/renaissance-benchmarks/renaissance/contents/README.md",
+  "mona-lisa-round.png",
+  "markdown"
+)
+</script>
+
+<p>The source file that explains how to use Renaissance can be found
+<a href="https://github.com/renaissance-benchmarks/renaissance/blob/master/README.md">here</a>.</p>
+
+<h1 id="-contributing-to-renaissance"><a name="contributing"></a> Contributing to Renaissance</h1>
+
+<p>One of the aims of the Renaissance suite is to continually evolve,
+and maintain a collection of relevant and interesting benchmarks
+for VM, compiler and tool developers.
+Renaissance therefore relies on an open-source contribution process
+to derive the set of benchmarks that are useful when optimizing or analyzing the JVM behaviour.
+The contribution guide contains detailed information about this process.</p>
+
+<div id="contribution-holder">
+</div>
+<script>
+loadRemoteContent(
+  "contribution-holder",
+  "https://api.github.com/repos/renaissance-benchmarks/renaissance/contents/CONTRIBUTION.md",
+  "mona-lisa-round.png",
+  "markdown"
+)
+</script>
+
+<p>The source file that explains the contribution process for the Renaissance suite can be found
+<a href="https://github.com/renaissance-benchmarks/renaissance/blob/master/CONTRIBUTION.md">here</a>.</p>
+
+<h1 id="-licensing-information"><a name="licensing"></a> Licensing Information</h1>
+
+<p>The Renaissance Benchmark Suite comes in two distributions,
+and is available under two licenses: the MIT license, and the GPL3 license.
+Depending on your needs, you can choose either of these licenses.
+The set of benchmarks in the Renaissance distribution with the MIT license is a subset of the
+benchmarks in the GPL3 distribution.</p>
+
+<h2 id="mit-distribution">MIT Distribution</h2>
+
+<p>The MIT license file can be found
+<a href="https://github.com/renaissance-benchmarks/renaissance/blob/master/LICENSE.MIT">here</a>.</p>
+
+<div id="license-holder-mit">
+</div>
+<script>
+loadRemoteContent(
+  "license-holder-mit",
+  "https://api.github.com/repos/renaissance-benchmarks/renaissance/contents/LICENSE.MIT",
+  "mona-lisa-round.png",
+  "license"
+)
+</script>
+
+<h2 id="gpl3-distribution">GPL3 Distribution</h2>
+
+<p>The GPL3 license file can be found
+<a href="https://github.com/renaissance-benchmarks/renaissance/blob/master/LICENSE.GPL">here</a>.</p>
+
+<div id="license-holder-gpl">
+</div>
+<script>
+loadRemoteContent(
+  "license-holder-gpl",
+  "https://api.github.com/repos/renaissance-benchmarks/renaissance/contents/LICENSE.GPL",
+  "mona-lisa-round.png",
+  "license"
+)
+</script>
+
+
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <div id="footer">
+    <!-- <div class="darkdivider"></div> -->
+    <!-- <div class="lightdivider"></div> -->
+  
+    <div id="footercontent" class="container_16">
+      <div class="grid_16 footer">
+        <ul class="horizmenu footermenu">
+          <li class="footerdivider footerelement"></li>
+          <li class="hint--top footerelement" data-hint="" id="quotebox">
+            <a href="">
+              <i class ="fa fa-lightbulb-o icon"></i> Tip of the day
+            </a>
+          </li>
+          <li class="footerdivider footerelement"></li>
+        </ul>
+        <script>
+        var quotebox = document.getElementById("quotebox");
+        var quote = fetchQuote();
+        quotebox.setAttribute("data-hint", quote.text + " " + quote.author)
+        </script>
+
+        <div class="copyright footerelement">
+          <a href="/">&copy; 2019 Renaissance Suite</a>
+        </div>
+      </div>
+      <div class="grid_12 footer">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+
+</html>
