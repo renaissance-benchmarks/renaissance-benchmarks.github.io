@@ -85,11 +85,6 @@ layout: base
       </span>
       <br/>
       <br/>
-      <div class="frontends">
-        <img height="48px" src="/resources/images/java-grey.png"/>
-        &nbsp; &nbsp;
-        <img height="48px" src="/resources/images/scala-grey.png"/>
-      </div>
     </div>
     <div class="grid_7">
       <div class="text-snippet">
@@ -128,13 +123,12 @@ layout: base
 
   <br/>
   <br/>
-  <br/>
 
   <div class="container_16">
     <div class="grid_16">
       <hr class="fancy-line">
       <div class="fancy-title">
-        <span><a href="/posts" class="faint-link">NEWS</a></span>
+        <span>NEWS</span>
       </div>
     </div>
   </div>
@@ -142,40 +136,19 @@ layout: base
   <br/>
   <br/>
 
-  {% for post in site.posts | limit: 4 %}
+  {% for post in site.posts %}
   <div class="container_16">
-    <div class="grid_16">
-      <h2 class="post-title">
-        <a href="{{ post.url }}">
-          {{ post.title }}
-        </a>
-      </h2>
-      <span class="post-date">
-        {{ post.date | date: '%B %d, %Y' }},
-        author: {{ post.author }}
-      </span>
-      <div>
-        {{ post.excerpt }}
-        <a href="{{ post.url }}">
-          ... read more ...
-        </a>
-      </div>
-    </div>
+    <h2 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+    <span class="post-date">
+      {{ post.date | date: '%B %d, %Y' }}
+    </span>
+    {{ post.excerpt }}
   </div>
-
-  <br/>
   {% endfor %}
-
-  <br/>
-  <br/>
-  <br/>
-
-  <div class="container_16">
-    <hr class="fancy-line">
-    <div class="fancy-title">
-      <span><a href="/posts" class="faint-link">See more news</a></span>
-    </div>
-  </div>
 
   <br/>
   <br/>
