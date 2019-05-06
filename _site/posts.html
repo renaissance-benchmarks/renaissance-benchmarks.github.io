@@ -7,7 +7,13 @@
   <title>Posts | Renaissance Suite</title>
   <meta name="keywords" content="benchmarks, JVM, benchmarking suite, concurrency, parallelism, modern" />
   <meta name="description" content="The next-generation benchmarking suite for the JVM." />
-  <link rel="icon" type="image/png" href="/favicon.ico?v=4"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="/resources/styles/proj.css"/>
   <link rel="stylesheet" href="/resources/styles/960.css" />
   <link rel="stylesheet" href="/resources/styles/font-awesome.min.css"/>
@@ -98,6 +104,57 @@
       <br/>
 
       
+        <h2 class="post-title">
+          <a href="/2019/05/06/renaissance-0-9-0.html">
+            Renaissance 0.9 Released
+          </a>
+        </h2>
+        <span class="post-date">
+          May 06, 2019,
+          author: Lubomír Bulej
+        </span>
+        <div>
+          <p>We are pleased to announce the release of the Renaissance benchmark
+suite for the Java Virtual Machine. The suite is primarily focused on
+parallelism and concurrency, and provides workloads that exercise the modern
+parallel programming abstractions and primitives provided by the JVM and the
+Java Class Library. Through these workloads, the suite aims to aid in 
+understanding of how modern applications and data processing frameworks use
+the concurrency features of the JVM, and to foster development of new
+optimizations that enable more efficient execution of such workloads.</p>
+
+<p>The Renaissance benchmark suite is intended to provide workloads that are not
+available elsewhere, and thus complement the workloads found in the existing,
+commonly used benchmark suites for the JVM, such as DaCapo, ScalaBench, and 
+SPECjvm2008, which we gratefully acknowledge. We have found a great deal of
+inspiration in these suites, and strive to match and, where possible, exceed,
+the level of quality and usability established by these suites.</p>
+
+<p>We realize that keeping a benchmarking suite alive (so that it evolves along
+with the platform and applications) requires a tremendous amount of work. We
+therefore aim to make the Renaissance development process as open as possible,
+and invite the community to participate in the process. The code is open-source
+and the contribution mechanism is open. The suite will be regularly updated
+through minor releases, while new benchmarks will be introduced or retired in
+major releases.</p>
+
+<p>Version 0.9 marks the first public open-source release of the Renaissance suite
+and is considered a major-release candidate with respect to the selection of
+workloads included in the suite. The initial selection is based on the upcoming
+<a href="/resources/docs/renaissance-suite.pdf">PLDI’19 paper</a>, which also provides
+additional details on motivation behind the suite as well as detailed analysis
+of individual benchmarks and initial performance results.
+We are currently stabilizing the internal design of the harness and its public
+APIs, and work on a number of features that need to be included in version 1.0,
+the first major release of the suite which should be ready in few weeks.</p>
+
+<p>We welcome any comments and contributions.</p>
+
+<p>Happy benchmarking!</p>
+
+
+        </div>
+      
     </div>
 
     
@@ -114,6 +171,18 @@
       <h3>All posts</h3>
 
       <ul class="post-list">
+      
+        <li>
+          <span class="list-title">
+            <a href="/2019/05/06/renaissance-0-9-0.html">
+              Renaissance 0.9 Released
+            </a>
+          </span>
+          <br/>
+          <span class="post-date">
+            May 06, 2019
+          </span>
+        </li>
       
       </ul>
     </div>

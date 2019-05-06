@@ -4,7 +4,7 @@
 
 <head>
   <meta charset=utf-8 />
-  <title>Renaissance Downloads | Renaissance Suite</title>
+  <title>Renaissance 0.9 Released | Renaissance Suite</title>
   <meta name="keywords" content="benchmarks, JVM, benchmarking suite, concurrency, parallelism, modern" />
   <meta name="description" content="The next-generation benchmarking suite for the JVM." />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -52,7 +52,7 @@
         <div class="grid_12">
           <ul class="horizmenu topmenu">
             <li class="topelement logo">
-              <!-- <img height="38" src="/resources/images/mona-lisa-round.png"/> -->
+              <!-- <img height="38" src="/resources/images/"/> -->
               <span class="logotext" style="">Renaissance Suite</span>
             </li>
           </ul>
@@ -91,28 +91,91 @@
     <!-- <div class="greydivider"></div> -->
     <!-- <div class="topshadow"></div> -->
 
-    <br/>
-
-<div id="content">
+    <div id="content">
   <div id="main" class="container_16">
 
-    <div class="grid_16">
+    
 
-      <h1 id="download">Download</h1>
+    <!-- This renders a single post -->
 
-<p>This webpage contains a list of all Renaissance releases. For each of them, you can download both the MIT and the GPL3 distributions. 
-More information on each release can be found at the <a href="https://github.com/renaissance-benchmarks/renaissance/releases">GitHub release page</a>.</p>
+    <div class="grid_12">
+      <br/>
 
-<div id="releases-holder">
-</div>
+      <h2 class="post-title">
+        <a href="/2019/05/06/renaissance-0-9-0.html">
+          Renaissance 0.9 Released
+        </a>
+      </h2>
+      <span class="post-date">
+        May 06, 2019,
+        author: Lubomír Bulej
+      </span>
 
-<script>
-getReleaseList("releases-holder", "https://api.github.com/repos/renaissance-benchmarks/renaissance/releases")
-</script>
+      <p>We are pleased to announce the release of the Renaissance benchmark
+suite for the Java Virtual Machine. The suite is primarily focused on
+parallelism and concurrency, and provides workloads that exercise the modern
+parallel programming abstractions and primitives provided by the JVM and the
+Java Class Library. Through these workloads, the suite aims to aid in 
+understanding of how modern applications and data processing frameworks use
+the concurrency features of the JVM, and to foster development of new
+optimizations that enable more efficient execution of such workloads.</p>
 
-<p><br /><br /></p>
+<p>The Renaissance benchmark suite is intended to provide workloads that are not
+available elsewhere, and thus complement the workloads found in the existing,
+commonly used benchmark suites for the JVM, such as DaCapo, ScalaBench, and 
+SPECjvm2008, which we gratefully acknowledge. We have found a great deal of
+inspiration in these suites, and strive to match and, where possible, exceed,
+the level of quality and usability established by these suites.</p>
+
+<p>We realize that keeping a benchmarking suite alive (so that it evolves along
+with the platform and applications) requires a tremendous amount of work. We
+therefore aim to make the Renaissance development process as open as possible,
+and invite the community to participate in the process. The code is open-source
+and the contribution mechanism is open. The suite will be regularly updated
+through minor releases, while new benchmarks will be introduced or retired in
+major releases.</p>
+
+<p>Version 0.9 marks the first public open-source release of the Renaissance suite
+and is considered a major-release candidate with respect to the selection of
+workloads included in the suite. The initial selection is based on the upcoming
+<a href="/resources/docs/renaissance-suite.pdf">PLDI’19 paper</a>, which also provides
+additional details on motivation behind the suite as well as detailed analysis
+of individual benchmarks and initial performance results.
+We are currently stabilizing the internal design of the harness and its public
+APIs, and work on a number of features that need to be included in version 1.0,
+the first major release of the suite which should be ready in few weeks.</p>
+
+<p>We welcome any comments and contributions.</p>
+
+<p>Happy benchmarking!</p>
 
 
+
+    </div>
+
+    
+
+    <div class="grid_4">
+      
+      
+
+      <h3>All posts</h3>
+
+      <ul class="post-list">
+      
+        <li>
+          <span class="list-title">
+            <a href="/2019/05/06/renaissance-0-9-0.html">
+              Renaissance 0.9 Released
+            </a>
+          </span>
+          <br/>
+          <span class="post-date">
+            May 06, 2019
+          </span>
+        </li>
+      
+      </ul>
     </div>
 
   </div>
