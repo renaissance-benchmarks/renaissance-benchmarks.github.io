@@ -4,7 +4,7 @@
 
 <head>
   <meta charset=utf-8 />
-  <title>Renaissance 0.9 Released | Renaissance Suite</title>
+  <title>Renaissance 0.10 Released | Renaissance Suite</title>
   <meta name="keywords" content="benchmarks, JVM, benchmarking suite, concurrency, parallelism, modern" />
   <meta name="description" content="The next-generation benchmarking suite for the JVM." />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -102,53 +102,39 @@
       <br/>
 
       <h2 class="post-title">
-        <a href="/2019/05/06/renaissance-0-9-0.html">
-          Renaissance 0.9 Released
+        <a href="/2019/07/03/renaissance-0-10-0.html">
+          Renaissance 0.10 Released
         </a>
       </h2>
       <span class="post-date">
-        May 06, 2019,
-        author: Lubomír Bulej
+        July 03, 2019,
+        author: Francois Farquet
       </span>
 
-      <p>We are pleased to announce the release of the Renaissance benchmark
-suite for the Java Virtual Machine. The suite is primarily focused on
-parallelism and concurrency, and provides workloads that exercise the modern
-parallel programming abstractions and primitives provided by the JVM and the
-Java Class Library. Through these workloads, the suite aims to aid in 
-understanding of how modern applications and data processing frameworks use
-the concurrency features of the JVM, and to foster development of new
-optimizations that enable more efficient execution of such workloads.</p>
+      <p>Two months after the announcement of the Renaissance benchmark
+suite, we are pleased to release version 0.10.0 that includes a new
+benchmark, several improvements and bug fixes.</p>
 
-<p>The Renaissance benchmark suite is intended to provide workloads that are not
-available elsewhere, and thus complement the workloads found in the existing,
-commonly used benchmark suites for the JVM, such as DaCapo, ScalaBench, and 
-SPECjvm2008, which we gratefully acknowledge. We have found a great deal of
-inspiration in these suites, and strive to match and, where possible, exceed,
-the level of quality and usability established by these suites.</p>
+<p>Most importantly, we added the <code class="highlighter-rouge">scala-doku</code> benchmark which is a
+Sudoku solver written in Scala. Other changes include making
+<code class="highlighter-rouge">finagle-http</code> more parallel, addressing an important bug in
+<code class="highlighter-rouge">finagle-chirper</code> and remove the native libraries dependencies of
+<code class="highlighter-rouge">db-shootout</code>. Moreover, the compatibility with different architectures
+has been improved and JDK11 is now also supported.
+All changes are listed in <a href="https://github.com/renaissance-benchmarks/renaissance/releases/tag/v0.10.0">the GitHub release</a>.</p>
 
-<p>We realize that keeping a benchmarking suite alive (so that it evolves along
-with the platform and applications) requires a tremendous amount of work. We
-therefore aim to make the Renaissance development process as open as possible,
-and invite the community to participate in the process. The code is open-source
-and the contribution mechanism is open. The suite will be regularly updated
-through minor releases, while new benchmarks will be introduced or retired in
-major releases.</p>
+<p>The numerous reports and positive feedback from the community are very
+encouraging and show a quick adoption of the suite across the industry.
+It helps companies like Oracle, IBM or SAP track performance
+and/or fix bugs. For instance, <a href="https://github.com/eclipse/openj9/issues/5726">this OpenJ9 bug</a>
+running Apache Spark has been spotted thanks to the Renaissance suite.</p>
 
-<p>Version 0.9 marks the first public open-source release of the Renaissance suite
-and is considered a major-release candidate with respect to the selection of
-workloads included in the suite. The initial selection is based on the upcoming
-<a href="/resources/docs/renaissance-suite.pdf">PLDI’19 paper</a>, which also provides
-additional details on motivation behind the suite as well as detailed analysis
-of individual benchmarks and initial performance results.
-We are currently stabilizing the internal design of the harness and its public
-APIs, and work on a number of features that need to be included in version 1.0,
-the first major release of the suite which should be ready in few weeks.</p>
-
-<p>We welcome any comments and contributions.</p>
-
-<p>Happy benchmarking!</p>
-
+<p>We address special thanks to :</p>
+<ul>
+  <li><a href="https://github.com/tkrodriguez">tkrodriguez</a> from Oracle for the in-depth analysis of the <code class="highlighter-rouge">finagle-chirper</code> bug</li>
+  <li><a href="https://github.com/vkostyukov">vkostyukov</a> from Twitter, for his feedback on the Finagle benchmarks</li>
+  <li><a href="https://github.com/MBaesken">MBaesken</a> and the SAP Machine team for compatibility testing on less common infrastructures</li>
+</ul>
 
 
     </div>

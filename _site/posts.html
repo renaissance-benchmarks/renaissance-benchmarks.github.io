@@ -105,6 +105,43 @@
 
       
         <h2 class="post-title">
+          <a href="/2019/07/03/renaissance-0-10-0.html">
+            Renaissance 0.10 Released
+          </a>
+        </h2>
+        <span class="post-date">
+          July 03, 2019,
+          author: Francois Farquet
+        </span>
+        <div>
+          <p>Two months after the announcement of the Renaissance benchmark
+suite, we are pleased to release version 0.10.0 that includes a new
+benchmark, several improvements and bug fixes.</p>
+
+<p>Most importantly, we added the <code class="highlighter-rouge">scala-doku</code> benchmark which is a
+Sudoku solver written in Scala. Other changes include making
+<code class="highlighter-rouge">finagle-http</code> more parallel, addressing an important bug in
+<code class="highlighter-rouge">finagle-chirper</code> and remove the native libraries dependencies of
+<code class="highlighter-rouge">db-shootout</code>. Moreover, the compatibility with different architectures
+has been improved and JDK11 is now also supported.
+All changes are listed in <a href="https://github.com/renaissance-benchmarks/renaissance/releases/tag/v0.10.0">the GitHub release</a>.</p>
+
+<p>The numerous reports and positive feedback from the community are very
+encouraging and show a quick adoption of the suite across the industry.
+It helps companies like Oracle, IBM or SAP track performance
+and/or fix bugs. For instance, <a href="https://github.com/eclipse/openj9/issues/5726">this OpenJ9 bug</a>
+running Apache Spark has been spotted thanks to the Renaissance suite.</p>
+
+<p>We address special thanks to :</p>
+<ul>
+  <li><a href="https://github.com/tkrodriguez">tkrodriguez</a> from Oracle for the in-depth analysis of the <code class="highlighter-rouge">finagle-chirper</code> bug</li>
+  <li><a href="https://github.com/vkostyukov">vkostyukov</a> from Twitter, for his feedback on the Finagle benchmarks</li>
+  <li><a href="https://github.com/MBaesken">MBaesken</a> and the SAP Machine team for compatibility testing on less common infrastructures</li>
+</ul>
+
+        </div>
+      
+        <h2 class="post-title">
           <a href="/2019/05/06/renaissance-0-9-0.html">
             Renaissance 0.9 Released
           </a>
@@ -171,6 +208,18 @@ the first major release of the suite which should be ready in few weeks.</p>
       <h3>All posts</h3>
 
       <ul class="post-list">
+      
+        <li>
+          <span class="list-title">
+            <a href="/2019/07/03/renaissance-0-10-0.html">
+              Renaissance 0.10 Released
+            </a>
+          </span>
+          <br/>
+          <span class="post-date">
+            July 03, 2019
+          </span>
+        </li>
       
         <li>
           <span class="list-title">
