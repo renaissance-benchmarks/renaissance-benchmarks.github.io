@@ -1135,3 +1135,8 @@ a.faint-link:hover {
 #measurements img {
   width: 960px;
 }
+
+li.topdivider.toprightmost {
+  margin-right: 10px;
+}
+
