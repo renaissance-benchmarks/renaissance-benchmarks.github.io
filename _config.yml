@@ -5,5 +5,6 @@ url: http://renaissance-benchmarks.github.io
 baseUrl: http://renaissance-benchmarks.github.io
 githubOrg: renaissance-benchmarks
 githubRepo: renaissance
+githubWorkflow: build.yml
 twitterHandle: renaissancejvm
 relative_permalinks: false
