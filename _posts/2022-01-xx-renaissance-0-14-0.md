@@ -11,7 +11,7 @@ changes. The most visible change is an update of Apache Spark to version 3.2.0,
 which enabled migrating the `apache-spark` benchmarks from Scala 2.12 to Scala
 2.13. In addition, Scala 2.13 benchmarks were updated to use Scala 2.13.8. The
 internal changes make it easier to run individual benchmarks in what we call
-_standalone mode_, which is desired in some use cases.
+_standalone mode_, which is desired for GraalVM Native Image benchmarking.
 
 The source code of the benchmarks remains unchanged, but updates to some of
 their dependencies may affect the code executed at runtime. Some of the
@@ -69,7 +69,8 @@ Standalone mode means executing a benchmark without the help of the launcher
 in the main Renaissance bundle. The benchmark harness is still used, but both
 the harness and benchmark code are loaded using a single class loader. This
 is useful in situations where using multiple class loaders makes the runtime
-too convoluted, e.g., when benchmarking AOT-compiled code.
+too convoluted, e.g., when benchmarking AOT-compiled code with GraalVM Native
+Image.
 
 Because the launcher is not used, the bundle needs to be manually extracted. 
 In addition to directories containing the benchmark and dependency jars, there
